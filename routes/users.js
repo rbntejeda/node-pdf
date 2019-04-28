@@ -21,7 +21,7 @@ router.get('/',async function(req, res, next) {
     res.setHeader('Content-Disposition', 'inline');
     res.contentType("application/pdf");
       res.send(result);
-      process.exit(); // to kill automatically LibreOffice workers
+      //process.exit(); // to kill automatically LibreOffice workers
     });
     
 });
