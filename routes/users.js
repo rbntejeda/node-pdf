@@ -17,11 +17,13 @@ router.get('/',async function(req, res, next) {
       return console.log(err);
     }
     
-// res.setHeader('Content-Length', result.size);
-res.setHeader('Content-Disposition', 'inline');
-res.contentType("application/pdf");
-    res.send(result);
-  });
+    // res.setHeader('Content-Length', result.size);
+    res.setHeader('Content-Disposition', 'inline');
+    res.contentType("application/pdf");
+      res.send(result);
+      process.exit(); // to kill automatically LibreOffice workers
+    });
+    
 });
 
 module.exports = router;
