@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/rbntejeda/node-pdf/issues"
   },
-  "homepage": "https://github.com/rbntejeda/node-pdf#readme"
+  "homepage": "https://github.com/rbntejeda/node-pdf#readme",
+  "dependencies": {
+    "carbone": "^1.2.0"
+  }
 }
